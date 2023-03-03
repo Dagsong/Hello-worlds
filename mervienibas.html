@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                background-image: url(images/cipari.jpg);
+            }
+            form {
+                text-indent: 20px;
+                background-color: rgb(220, 220, 0);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Informācijas daudzuma mērvienības</h1>
+        <form>
+            <script>
+                
+                function mbvalue(){
+                var mbvalue = Number(document.getElementById("GB").value)*1024;
+                document.getElementById("MBval").value=mbvalue
+                }
+                function mibvalue(){
+                var mibvalue = Number(document.getElementById("GB").value)*953.674;
+                document.getElementById("MiBval").value=mibvalue
+                }
+                
+            </script>
+            <div><input type="text" name="giga" id="GB">GB= </div><br>
+            <div><input onclick="mbvalue()" type="button" name="mebatton" value="Izteikt megabaitos" id="MB"> <input type="text" name="mebalue" id="MBval">MB </div><br>
+            <div><input onclick="mibvalue()" type="button" name="mibibatton" value="Izteikt   mibibaitos" id="MiB"> <input type="text" name="mibibalue" id="MiBval">MiB </div>
+        </form>
+    </body>
+</html>
