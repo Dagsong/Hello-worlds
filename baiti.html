@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+         <form>
+            <script>
+                
+                function kibvalue(){
+                var kibvalue = Number(document.getElementById("atr").value)*122.0703125;
+                document.getElementById("atrval").value=kibvalue
+                }
+                function kbvalue(){
+                var kbvalue = Number(document.getElementById("atr").value)*1000;
+                document.getElementById("atrval").value=kbvalue
+                }
+                
+            </script>
+            <div>Aprēķināt cik daudz informācijas var lejuplādēt</div>
+            <div><input type="text" name="giga" id="atr">sekundēs, ja interneta ātrums ir 25 mbps</div><br>
+            <div>Atbilde</div><br>
+            <div> <input type="text" name="atrval" id="atrval"><input onclick="kibvalue()" type="radio" id="kib" name="kb" value="KiB">KiB<input onclick="kbvalue()" type="radio" id="kb" name="kb" value="KB">KB </div>
+        </form>
+    </body>
+</html>
